@@ -192,7 +192,7 @@ import { ElMessage } from 'element-plus'
 import { 
   Plus, MoreFilled, Edit, Delete, Bell,
   Calendar as CalendarIcon, List, Timer, 
-  Trophy, Flame, Drizzling, Coffee, Moon,
+  Trophy, Sunny, Drizzling, Coffee, Moon,
   Reading, Running, Music, Watermelon
 } from '@element-plus/icons-vue'
 
@@ -240,7 +240,7 @@ const availableIcons = [
   { value: 'List', component: List },
   { value: 'Timer', component: Timer },
   { value: 'Trophy', component: Trophy },
-  { value: 'Flame', component: Flame },
+  { value: 'Sunny', component: Sunny },
   { value: 'Coffee', component: Coffee },
   { value: 'Moon', component: Moon },
   { value: 'Running', component: Running },

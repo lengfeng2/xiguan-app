@@ -102,7 +102,7 @@ import { useHabitsStore } from '@/stores/habits'
 import dayjs from 'dayjs'
 import { 
   List, CircleCheck, DataAnalysis, Calendar as CalendarIcon, 
-  Trophy, Timer, Flame
+  Trophy, Timer, Sunny
 } from '@element-plus/icons-vue'
 
 const habitsStore = useHabitsStore()
@@ -114,7 +114,7 @@ const todayHabits = computed(() => habits.value.filter(h => h.cycle === 'daily')
 const stats = computed(() => [
   { title: '活跃习惯', value: habits.value.length, icon: List, color: '#409eff' },
   { title: '今日已打卡', value: todayCompletedCount.value, icon: CircleCheck, color: '#67c23a' },
-  { title: '连续打卡', value: 0, icon: Flame, color: '#e6a23c' },
+  { title: '连续打卡', value: 0, icon: Sunny, color: '#e6a23c' },
   { title: '总完成率', value: `${overallCompletionRate.value}%`, icon: DataAnalysis, color: '#909399' }
 ])
 
@@ -149,7 +149,7 @@ function getIconComponent(iconName) {
     DataAnalysis,
     Trophy,
     Timer,
-    Flame
+    Sunny
   }
   return icons[iconName] || List
 }
