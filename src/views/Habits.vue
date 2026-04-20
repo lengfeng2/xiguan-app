@@ -193,7 +193,7 @@ import {
   Plus, MoreFilled, Edit, Delete, Bell,
   Calendar as CalendarIcon, List, Timer, 
   Trophy, Sunny, Coffee, Moon,
-  Running, Headset, Watermelon
+  Headset, Watermelon
 } from '@element-plus/icons-vue'
 
 const habitsStore = useHabitsStore()
@@ -243,7 +243,6 @@ const availableIcons = [
   { value: 'Sunny', component: Sunny },
   { value: 'Coffee', component: Coffee },
   { value: 'Moon', component: Moon },
-  { value: 'Running', component: Running },
   { value: 'Headset', component: Headset },
   { value: 'Watermelon', component: Watermelon }
 ]
