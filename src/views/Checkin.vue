@@ -114,7 +114,7 @@ import dayjs from 'dayjs'
 import { 
   ArrowLeft, ArrowRight, Plus, Minus, CircleCheck, RefreshRight,
   Calendar as CalendarIcon, List, Timer, Trophy, Sunny, Coffee, Moon,
-  Running, Music, Watermelon
+  Running, Headset, Watermelon
 } from '@element-plus/icons-vue'
 
 const habitsStore = useHabitsStore()
@@ -186,7 +186,7 @@ function getIconComponent(iconName) {
     Coffee,
     Moon,
     Running,
-    Music,
+    Headset,
     Watermelon
   }
   return icons[iconName] || List

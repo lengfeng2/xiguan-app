@@ -112,7 +112,7 @@ import dayjs from 'dayjs'
 import * as echarts from 'echarts'
 import { 
   List, CircleCheck, TrendCharts, Calendar as CalendarIcon,
-  Timer, Trophy, Sunny, Coffee, Moon, Running, Music, Watermelon
+  Timer, Trophy, Sunny, Coffee, Moon, Running, Headset, Watermelon
 } from '@element-plus/icons-vue'
 
 const habitsStore = useHabitsStore()
