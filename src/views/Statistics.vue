@@ -335,20 +335,22 @@ function initCharts() {
 }
 
 function isDayCompleted(data) {
-  if (!selectedHabit.value) return false
+  if (!selectedHabit.value || !data || !data.dayjs) return false
   const dateStr = data.dayjs.format('YYYY-MM-DD')
   const checkin = habitsStore.getCheckinByDate(selectedHabit.value.id, dateStr)
   return checkin && checkin.count >= selectedHabit.value.targetCount
 }
 
 function getDayStatus(data) {
-  if (!selectedHabit.value) return ''
+  if (!selectedHabit.value || !data || !data.dayjs) return ''
   if (isDayCompleted(data)) return 'completed'
   return ''
 }
 
 function viewDayDetail(data) {
-  console.log('查看详情:', data.dayjs.format('YYYY-MM-DD'))
+  if (data && data.dayjs) {
+    console.log('查看详情:', data.dayjs.format('YYYY-MM-DD'))
+  }
 }
 
 onMounted(() => {

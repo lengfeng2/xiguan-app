@@ -171,6 +171,9 @@ function toggleCheckin(habit) {
 }
 
 function getHabitsForDate(data) {
+  if (!data || !data.dayjs) {
+    return []
+  }
   const dateStr = data.dayjs.format('YYYY-MM-DD')
   return habits.value.filter(habit => {
     const checkin = habitsStore.getCheckinByDate(habit.id, dateStr)
